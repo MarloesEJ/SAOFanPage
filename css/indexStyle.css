@@ -1,0 +1,50 @@
+body{
+    height: 100vh;
+  }
+  
+  header{
+    position: relative;
+  }
+  
+  footer{
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+  }
+  
+  .homepageHeader{
+    background: url(../img/kiritoBackground.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .btnWiki{
+    display: block;
+    color: white;
+    background-color: #2E294E;
+    padding: 12px 15px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  
+    border-radius: 8px;
+    box-shadow:1px 1px #9055A2,
+                2px 2px #9055A2;
+  }
+  
+  .btnWiki:hover{
+    background-color: #9055A2;
+    cursor: pointer;
+  }
+  
+  .btnWiki a, .btnWiki a:visited{
+    color: white;
+    text-decoration: none;
+  }
+  
