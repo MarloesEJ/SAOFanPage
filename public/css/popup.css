@@ -1,0 +1,66 @@
+/* .backgroundblur{
+    width: 100vw;
+    height: 100vh;
+    position: sticky;
+} */
+
+
+.popUp{
+    width: 400px;
+    background-color: #2E294E;
+    border-radius: 6px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    justify-content: center;
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 10;
+}
+
+.popUp.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popUp>h2{
+    font-size: 38px;
+    font-weight: 600;
+    margin: 30px 0 10px;
+    color:#9055A2;
+    text-shadow:1px 1px #2E294E,
+              2px 2px #2E294E;
+}
+
+.popUp button{
+    width: 100px;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: #9055A2;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.5);
+}
+
+#overlay_popup{
+    position: fixed;
+    opacity: 0;
+    transition: 200 ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+#overlay_popup.active{
+    opacity: 1;
+    pointer-events: all;
+}

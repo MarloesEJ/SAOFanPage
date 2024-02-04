@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/orderform.css">
+    <title>Order | SAO</title>
+  </head>
+  <body>
+    <section class = "wrapper">
+      <header class="title"> Orderform</header>
+      <form class="form">
+          <p class="inputfield">
+            <label for="firstname">First name</label>
+            <input id="firstname" type="text" name="firstname" class="input" placeholder="Type here your firstname in" required>
+          </p>
+          <p class="inputfield">
+            <label for="lastname">Last name</label>
+            <input id="lastname" type="text" name="lastname" class="input" placeholder="Type here your surname in" required>
+          </p>
+          <p class="inputfield">
+            <label for="address">Address</label>
+            <input id="address" type="text" name="address" class="input" placeholder="Type here your address in" required>
+          </p>
+          <p class="inputfield">
+            <label for="housenumber">housenumber</label>
+            <input id="housenumber" type="text" name="address" class="input" placeholder="Type here your housenumber in" required>
+          </p>
+          <p class="inputfield">
+            <label for="zipcode">Zipcode</label>
+            <input id="zipcode" type="text" name="zipcode" class="input" placeholder="Type here your zipcode in" required>
+          </p>
+          <p class="inputfield">
+            <label for="country">Country</label>
+            <input id="country" type="text" name="country" class="input" placeholder="Type here your country in" required>
+          </p>
+          <p class="inputfield">
+            <label for="email">Email adress</label>
+            <input id="email" type="text" name="email" class="input" placeholder="Type here your email in" required>
+          </p>
+        </form>
+        <section class="inputfield" id="orderButton">
+          <button type="button" class="orderbtn" name="orderbutton" id="orderinput">Order</button>
+        </section>
+    </section>
+    <div class="bg-modal">
+      <section class="modal-content">
+        <div class="close">+</div>
+        <h1 class="btitle">Order confirmed</h1>
+        <p> You should get a confirmation email in your inbox soon. When your order has been shipped you will get a new email with details.
+            Hope you like your order!  </p>
+        <button type="button" class="tohome" name="homeBtn" id="toHomeBtn"> Home </button>
+      </section>
+    </div>
+    <script src="js/order.js"></script>
+  </body>
+</html>

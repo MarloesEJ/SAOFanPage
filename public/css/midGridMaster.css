@@ -1,0 +1,63 @@
+body{
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  grid-template-areas:
+  "header header header"
+  ". main ."
+  ". . footer";
+}
+
+header{
+  grid-area: header;
+  position: relative;
+}
+
+main{
+  grid-area: main;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60vw;
+}
+footer{
+  grid-area: footer;
+}
+
+.aboutHeader{
+  background: url(../img/AsunaKiritoBackground.jpg) no-repeat center top fixed;
+  background-size: cover;
+}
+
+.animeHeader{
+  background: url(../img/Sundown.jpg) no-repeat center top fixed;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 800px) and (max-width:1000px){
+
+  main{
+    width: 70vw;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width:800px){
+  main{
+    width: 75vw;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  main{
+    width: 85vw;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .aboutHeader{
+    background-size: contain;
+  }
+
+  .animeHeader{
+    background-size: contain;
+  }
+}

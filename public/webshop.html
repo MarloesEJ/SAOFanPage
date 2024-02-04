@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, inital-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/cardGridMaster.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <script defer src="js/main.js"></script>
+    <title>webshop | SAO</title>
+  </head>
+  <body>
+    <header class="webshopHeader">
+      <div class="overlay">
+      <nav class="navbar">
+        <section class="brand-title">Sword Art Online</section>        
+        <section class="navbar-links">
+          <ul>
+            <li> <a href="./index.html"> Home </a> </li>
+            <li> <a href = "./about.html"> about </a> </li>
+            <li> <a href = "./characters.html"> characters </a> </li>
+            <li> <a href = "./anime.html"> anime </a> </li>
+            <li> <a class="navActive" href = "#"> webshop </a> </li>
+          </ul>
+        </section>
+      </nav>
+      <h1>Sword Art Online</h1>
+      <h3>webshop</h3>
+      </div>
+    </header>
+
+    <main>
+
+      <ul class="cardWrapper">
+        <li class="card" onclick="openPopUp()">
+          <figure class="figImg">
+              <img class="imageWeb" src="./img/webshop/drinkBottle.jpg" alt="">
+          </figure>
+          <h3>Asuna waterbottle</h3>
+          <h4> &euro; 14.95</h4>
+        </li>
+        <li class="card" onclick="openPopUp()">
+          <figure class="figImg">
+              <img class="imageWeb" src="./img/webshop/actionFigure.webp" alt="">
+          </figure>
+          <h3> Kirito and Asuna action figure </h3>
+          <h4> &euro; 35.95</h4>
+        </li>
+        <li class="card" onclick="openPopUp()">
+          <figure class="figImg">
+              <img class="imageWeb" src="./img/webshop/AsunaCosplay.webp" alt="">
+          </figure>
+          <h3> Cosplay of Asuna </h3>
+          <h4> &euro; 51.95 </h4>
+        </li>
+        <li class="card" onclick="openPopUp()">
+          <figure class="figImg">
+              <img class="imageWeb" src="./img/webshop/keychain.jpg" alt="">
+          </figure>
+          <h3> Kiritos main sword keychain</h3>
+          <h4> &euro; 9.95</h4>
+        </li>
+        <li class="card" onclick="openPopUp()">
+          <figure class="figImg">
+              <img class="imageWeb" src="./img/webshop/KiritoSword.jpg" alt="">
+          </figure>
+          <h3> Life size Kiritos secondary sword </h3>
+          <h4> &euro; 149.95</h4>
+        </li>
+        <li class="card" onclick="openPopUp()">
+          <figure class="figImg">
+              <img class="imageWeb" src="./img/webshop/kiritoCosplay.jpg" alt="">
+          </figure>
+          <h3> Cosplay of Kirito</h3>
+          <h4> &euro; 55.95 </h4>
+        </li>
+      </ul>
+
+      <section class="popUp" id="js--popup">
+        <h2>Order</h2>
+        <p>if you want to order this item. Click order,
+            otherwise click cancel</p>
+        <button onclick="openOrder()"> order</button>
+        <button onclick="closePopUp()"> cancel</button>
+      </section>
+      
+    </main>
+    <footer>
+      <p> Gemaakt door Marloes - IWDER eindopdracht 2022/2023</p>
+    </footer>
+    <div id="overlay_popup"></div>
+  </body>
+</html>
