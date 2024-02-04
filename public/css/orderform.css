@@ -72,37 +72,30 @@ button:hover{
   font-size: 16px;
 }
 
-.bg-modal{
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.7);
+.modal{
   position: fixed;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: none;
+  width: 500px;
+  z-index: 100;
 }
 
-.modal-content{
-  width: 400px;
-  height: 200px;
-  color: #fff;
-  background-color: #011638;
+/* .modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: 200 ease-in-out;
+  border: 2px solid black;
   border-radius: 10px;
-  text-align: center;
-  padding: 20px;
-  position: relative;
-}
+  z-index: 10;
+  background-color: #2E294E;
+  width: 500px;
+  max-width: 80%;
+} */
 
-.close{
-  position: absolute;
-  top: 0;
-  right: 14px;
-  font-size: 45px;
-  transform: rotate(45deg);
-  cursor: pointer;
-}
+/* .modal.active{
+  transform: translate(-50%, -50%) scale(1);
+} */
+
 
 @media (max-width:420px) {
   .wrapper .form .inputfield{
@@ -114,17 +107,5 @@ button:hover{
   }
   .wrapper .form .inputfield.mail{
     flex-direction: row;
-  }
-}
-
-@media (max-width: 455px) {
-  #orderbutt {
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 300px) {
-  #orderbutt {
-    margin-top: 40px;
   }
 }

@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/orderform.css">
+    <script defer src="js/order.js"></script>
     <title>Order | SAO</title>
   </head>
   <body>
     <section class = "wrapper">
       <header class="title"> Orderform</header>
-      <form class="form">
+      <form class="form" onsubmit="order()">
           <p class="inputfield">
             <label for="firstname">First name</label>
             <input id="firstname" type="text" name="firstname" class="input" placeholder="Type here your firstname in" required>
@@ -38,20 +39,21 @@
             <label for="email">Email adress</label>
             <input id="email" type="text" name="email" class="input" placeholder="Type here your email in" required>
           </p>
+
+          <section class="inputfield" id="orderButton">
+            <button type="submit" class="orderbtn" name="orderbutton">Order</button>
+          </section>
         </form>
-        <section class="inputfield" id="orderButton">
-          <button type="button" class="orderbtn" name="orderbutton" id="orderinput">Order</button>
-        </section>
     </section>
-    <div class="bg-modal">
-      <section class="modal-content">
-        <div class="close">+</div>
-        <h1 class="btitle">Order confirmed</h1>
+
+    <section class="modal" id="js--modal">
+      <h1 class="btitle">Order confirmed</h1>
+      <button data-close-button class="close-button">&times;</button>
         <p> You should get a confirmation email in your inbox soon. When your order has been shipped you will get a new email with details.
-            Hope you like your order!  </p>
-        <button type="button" class="tohome" name="homeBtn" id="toHomeBtn"> Home </button>
-      </section>
-    </div>
-    <script src="js/order.js"></script>
+            Hope you will like your order!  </p>
+            <button type="button" class="tohome" name="homeBtn" id="toHomeBtn"> Home </button>
+    </section>
+
+    
   </body>
 </html>

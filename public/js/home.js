@@ -11,13 +11,12 @@ let element = document.getElementById('header')
     ]
 
     
+function changeImage(){
+    let newImgIndex = (imgIndex + 1)%listOfImg.length
+    element.style.backgroundImage = "url('" + listOfImg[newImgIndex] + "')"
+    imgIndex = newImgIndex
+}
 
-    function changeImage(){
-        let newImgIndex = (imgIndex + 1)%listOfImg.length
-        element.style.backgroundImage = "url('" + listOfImg[newImgIndex] + "')"
-        imgIndex = newImgIndex
-    }
+changeImage()
 
-    changeImage()
-
-    setInterval(changeImage, 7000)
+setInterval(changeImage, 7000)
