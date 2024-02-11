@@ -7,10 +7,10 @@
     <script defer src="js/order.js"></script>
     <title>Order | SAO</title>
   </head>
-  <body>
+  <body class="order-body">
     <section class = "wrapper">
       <header class="title"> Orderform</header>
-      <form class="form" onsubmit="order()">
+      <form class="form" id="js--form">
           <p class="inputfield">
             <label for="firstname">First name</label>
             <input id="firstname" type="text" name="firstname" class="input" placeholder="Type here your firstname in" required>
@@ -40,18 +40,21 @@
             <input id="email" type="text" name="email" class="input" placeholder="Type here your email in" required>
           </p>
 
-          <section class="inputfield" id="orderButton">
+          <!-- <section class="inputfield" id="orderButton"> -->
             <button type="submit" class="orderbtn" name="orderbutton">Order</button>
-          </section>
+          <!-- </section> -->
         </form>
     </section>
+    <section id="overlay"></section>
 
     <section class="modal" id="js--modal">
-      <h1 class="btitle">Order confirmed</h1>
-      <button data-close-button class="close-button">&times;</button>
-        <p> You should get a confirmation email in your inbox soon. When your order has been shipped you will get a new email with details.
-            Hope you will like your order!  </p>
-            <button type="button" class="tohome" name="homeBtn" id="toHomeBtn"> Home </button>
+      <header class="header-modal"><h1 class="btitle">Order confirmed</h1>
+        <button data-close-button class="close-button" onclick=closeModal()>&times;</button></header>
+        <section class="body-modal">
+          <p> You should get a confirmation email in your inbox soon. When your order has been shipped you will get a new email with details.
+              Hope you will like your order!  </p>
+          <button type="button" class="orderbtn" name="homeBtn" onclick=goHome()> Home </button>
+        </section>
     </section>
 
     

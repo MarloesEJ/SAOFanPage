@@ -3,7 +3,7 @@ html, body{
   padding: 0;
 }
 
-body{
+.order-body{
   font-size: 18px;
   font-family: "miss fajardose";
   font-weight: 500;
@@ -12,7 +12,7 @@ body{
   background-size: auto;
 }
 
-button{
+.orderbtn{
   display: block;
   color: white;
   background-color: #2E294E;
@@ -78,24 +78,61 @@ button:hover{
   z-index: 100;
 }
 
-/* .modal{
+.modal{
+  color: #d8d8d8;
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(0);
   transition: 200 ease-in-out;
   border: 2px solid black;
   border-radius: 10px;
-  z-index: 10;
+  z-index: 20;
   background-color: #2E294E;
   width: 500px;
   max-width: 80%;
-} */
+}
 
-/* .modal.active{
+.modal.active{
   transform: translate(-50%, -50%) scale(1);
-} */
+}
 
+.header-modal{
+  padding: 10px 15px 0px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-modal .close-button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.body-modal{
+  padding: 10px 15px 20px 15px;
+}
+
+#overlay{
+  position: fixed;
+  opacity: 0;
+  transition: 200 ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active{
+  opacity: 1;
+  pointer-events: all;
+}
 
 @media (max-width:420px) {
   .wrapper .form .inputfield{

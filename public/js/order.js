@@ -1,17 +1,21 @@
-// document.getElementById('orderinput').addEventListener('click', function(){
-//   document.querySelector('.bg-modal').style.display = 'flex';
-// });
+const closeModalButton = document.querySelectorAll('[data-close-button]')
+const modal = document.getElementById("js--modal")
+const form = document.getElementById("js--form")
+const overlay = document.getElementById("overlay")
 
+form.addEventListener('submit', order);
 
+function order(){
+    event.preventDefault()
+    modal.classList.add("active")
+    overlay.classList.add("active")
+}
 
-// function order(){
-//   document.querySelector('.bg-modal').style.display = 'flex';
+function closeModal(){
+    modal.classList.remove("active")
+    overlay.classList.remove("active")
+}
 
-//   document.querySelector('.close').addEventListener('click', function(){
-//     document.querySelector('.bg-modal').style.display = 'none';
-//   });
-  
-//   document.getElementById('toHomeBtn').addEventListener('click', function(){
-//     window.location.href = "index.html";
-//   });
-// }
+function goHome(){
+    window.location.href = "index.html"
+}
