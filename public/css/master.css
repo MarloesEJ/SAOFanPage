@@ -29,21 +29,7 @@ header{
   animation-duration: 5s;
 
 }
-.overlay>h1{
-  color: #9055A2;
-  font-size: 300%;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-shadow:1px 1px #2E294E,
-              2px 2px #2E294E;
 
-  animation-name: fadeIn;
-  animation-duration: 2s;
-  animation-delay: 2s;
-  animation-fill-mode: backwards;
-  }
 
 .overlay>h3{
   color: #9055A2;
@@ -175,18 +161,15 @@ iframe{
   width: 100%;
   height: 100%;
 }
-/* 
-@media only screen and (max-width:1000px){
-header{
-  height: 30vh;
-  }
-  .overlay>h1{
-    display: none;
-  }
-} */
+
 
 @media only screen and (max-width:900px){
+  header{
+    height: 30vh;
+    }
+
   .navbar{
+    background-color: rgba(30, 0, 70, 0.6);
     flex-direction: column;
     align-items: flex-start;
   }
