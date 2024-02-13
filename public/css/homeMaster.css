@@ -23,6 +23,11 @@ footer{
   transition: background-image 0.5s ease;
 }
 
+#homepageBrandtitle{
+  opacity: 0;
+  cursor: default;
+}
+
 .btnWiki{
   display: block;
   color: white;

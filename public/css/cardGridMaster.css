@@ -49,7 +49,6 @@ h4{
 }
 .card{
   list-style: none;
-  cursor: pointer;
   text-align: center;
   background-color: #2E294E;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -82,6 +81,7 @@ h4{
 .imageWeb{
   width: 198px;
   height: 280px;
+  cursor: pointer;
 }
 
 

@@ -1,5 +1,6 @@
 .popUp{
-    width: 400px;
+    min-width: 300px;
+    max-width: 450px;
     background-color: #2E294E;
     border-radius: 6px;
     position: fixed;

@@ -1,5 +1,6 @@
 *{
   box-sizing: border-box;
+  cursor: default;
 }
 
 html, body{
@@ -33,7 +34,7 @@ header{
 
 .overlay>h3{
   color: #9055A2;
-  font-size: 150%;
+  font-size: 300%;
   position: absolute;
   top: 28%;
   left: 50%;
@@ -124,6 +125,7 @@ iframe{
 .navbar-links li a:hover{
   font-size: 1.75rem;
   color: #9055A2;
+  cursor: pointer;
 }
 
 .navbar-links .navActive{
